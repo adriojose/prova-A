@@ -1,0 +1,31 @@
+<script>
+    /*
+    Problema: Notas
+    Pergunte ao Professor quantas notas o aluno obteve no trimestre.
+    Faça com que o Professor informe todas as notas obtidas pelo aluno. Após, calcule e apresente qual foi a média obtida pelo aluno, apresentando também a menor e a maior nota obtida.
+    */
+
+    //Entrada
+    let listaNotas = [6, 8, 9, 7];
+    let somaNota = 0;
+    let notas = [];
+
+    //Processamento
+    for (let nota of notaAluno) {
+        let nota = prompt(`informe a nota`);
+        notas.push(nota);
+        somaNota += nota
+    }
+    alert(notas.sort((a,b) => a - b))
+    let media = somaNota / 4;
+    
+    //Saída
+    /*
+    Exemplo:
+    Notas: 4
+    let listaNotas = [6, 8, 9, 7];
+    Média: 7,5
+    Maior nota: 9
+    Menor nota: 6
+    */
+</script>
